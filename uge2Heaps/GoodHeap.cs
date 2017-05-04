@@ -13,7 +13,7 @@ namespace uge2Heaps
         private int last;
         public GoodHeap()
         {
-            max = 10;
+            max = 2;
             elements = new int[max];
             last = -1;
         }
@@ -40,7 +40,7 @@ namespace uge2Heaps
         {
             int newMax = max * 2;
             int[] newElements = new int[newMax];
-            Array.Copy(elements, newElements, max - 1);
+            Array.Copy(elements, newElements, max -1);
             elements = newElements;
             max = newMax;
         }
